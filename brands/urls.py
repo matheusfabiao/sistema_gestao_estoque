@@ -5,6 +5,6 @@ urlpatterns = [
     path(
         'brands/list/',
         views.BrandListView.as_view(),
-        name='brands_list'
+        name='brand_list'
     ),
 ]

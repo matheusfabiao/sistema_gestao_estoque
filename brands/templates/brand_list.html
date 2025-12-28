@@ -30,6 +30,7 @@
                 <th scope="col">ID</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Descrição</th>
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -38,6 +39,11 @@
                 <td>{{ brand.id }}</td>
                 <td>{{ brand.name }}</td>
                 <td>{{ brand.description }}</td>
+                <td>
+                    <a href="{% url 'brand_detail' brand.id %}" class="btn btn-info btn-sm">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>

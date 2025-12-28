@@ -12,4 +12,9 @@ urlpatterns = [
         views.BrandCreateView.as_view(),
         name='brand_create'
     ),
+    path(
+        'brands/<int:pk>/detail/',
+        views.BrandDetailView.as_view(),
+        name='brand_detail'
+    ),
 ]
